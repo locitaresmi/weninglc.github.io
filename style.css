@@ -1,0 +1,164 @@
+html {
+  font-family: "Rufina", serif !important;
+  overflow-x: hidden;
+}
+
+/* Header */
+
+.head {
+  height: auto;
+  min-height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.head h1 {
+  font-size: 80px;
+  text-align: right;
+  text-align: inherit;
+}
+
+.head h2 {
+  right: 20%;
+  position: absolute;
+  font-size: 90px;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.head p {
+  font-size: 20px;
+  text-align: inherit;
+}
+
+.nav {
+  z-index: 2;
+  position: absolute;
+  height: 70px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.menu a {
+  text-decoration: none;
+  color: grey;
+  text-emphasis: none;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: black;
+  text-emphasis: none;
+}
+
+.head img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.foto {
+  -webkit-filter: drop-shadow(33px 28px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(33px 28px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* End of header section */
+
+/* About me */
+
+.about-me {
+  background-image: url(./images/bg.jpg);
+  min-height: 200vh;
+}
+
+.about-me p {
+  font-size: 20px;
+}
+
+.about-me img {
+  box-shadow: 0px 28px 33px rgba(0, 0, 0, 0.25);
+}
+
+.text1 {
+  margin-top: 20%;
+}
+
+.text2 {
+  margin-top: 20%;
+  text-align: right;
+}
+
+/* End of about me section */
+
+/* Projects */
+
+.projects {
+  height: 100vh;
+  /* background-color: #f2f2f2; */
+}
+
+.carousel {
+  margin-top: 7%;
+  margin-bottom: 10%;
+  /* background: black; */
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #9dc2d5;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+}
+
+.projects h2 {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* End of projects section */
+
+/* Contact */
+
+.contact {
+  /* padding: 15rem; */
+  min-height: 90vh;
+  background-color: #f2f2f25b;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #c484d4;
+}
+
+.contact a:hover {
+  text-decoration: none;
+  color: rgb(190, 93, 214);
+}
+
+.contact a img {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* End of contact section */
+
+.footer {
+  min-height: 10vh;
+  background-color: #f2f2f25b;
+}
